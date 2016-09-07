@@ -1,9 +1,10 @@
 'use strict';
 
+/*eslint no-new-func: 0 */
 const noop = () => {}
 
 function traps(trapFn = noop) {
-  const proxy = new Proxy(function() {}, {
+  const proxy = new Proxy(new Function(), {
     get(target, name) {
       if (name in target || 'inspect' === name) {
         return target[name]

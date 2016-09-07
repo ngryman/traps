@@ -5,14 +5,17 @@
   "author": "Nicolas Gryman <ngryman@gmail.com> (http://ngryman.sh/)",
   "license": "MIT",
   "repository": "ngryman/traps",
-  "main": "index.es5.js",
+  "main": "index.cjs",
   "jsnext:main": "index.js",
+  "engines": {
+    "node": ">=6"
+  },
   "files": [
     "index.js",
     "index.es5.js"
   ],
   "scripts": {
-    "lint": "eslint {index,test/*}.js",
+    "lint": "eslint {,test/}*.js",
     "pretest": "npm run lint -s",
     "test": "nyc ava",
     "dev": "npm run test -- --watch",
@@ -20,8 +23,8 @@
     "see-coverage": "nyc report --reporter=html && open coverage/index.html",
     "check-coverage": "nyc check-coverage --lines 95 --functions 95 --branches 95",
     "prebuild": "npm run lint -s",
-    "build": "rollup --format cjs --input index.js --output index.es5.js",
-    "postbuild": "git add index.es5.js"
+    "build": "rollup --format cjs --input index.js --output index.cjs",
+    "postbuild": "git add index.cjs"
   },
   "precommit": [
     "test",
