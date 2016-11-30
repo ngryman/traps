@@ -38,15 +38,15 @@
   ],
   "dependencies": {},
   "devDependencies": {
-    "ava": "^0.16.0",
+    "ava": "^0.17.0",
     "babel-plugin-transform-es2015-modules-commonjs": "^6.14.0",
     "babel-register": "^6.14.0",
     "codecov.io": "^0.1.6",
     "eslint": "^3.2.2",
     "eslint-config-ngryman": "^1.4.0",
-    "nyc": "^8.0.0",
+    "nyc": "^10.0.0",
     "pre-commit": "^1.1.3",
-    "rollup": "^0.34.13",
+    "rollup": "^0.36.4",
     "spy": "^0.1.3"
   },
   "ava": {
