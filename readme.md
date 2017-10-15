@@ -1,5 +1,7 @@
 # traps
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/ngryman/traps.svg)](https://greenkeeper.io/)
+
 > Trap me if you can!
 
 [![travis][travis-image]][travis-url] [![codecov][codecov-image]][codecov-url]
